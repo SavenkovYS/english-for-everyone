@@ -1,0 +1,37 @@
+version: '2.4'
+
+services:
+  nodejs:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3300:3300"
+      - "9229:9229"
+    volumes:
+      - .:/app
+    networks:
+      - backend
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:14.2
+    ports:
+      - "5432:5432"
+    volumes:
+      - english_db:/var/lib/postgresql/data
+    networks:
+      - backend
+    env_file:
+      - ./docker.local.env
+    healthcheck:
+      test: pg_isready -U postgres -h 127.0.0.1
+
+volumes:
+  english_db:
+    external: true
+
+networks:
+  backend:
