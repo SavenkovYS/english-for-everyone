@@ -1,0 +1,29 @@
+:root {
+  --fs-h1: 2rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.125rem;
+  --fs-body: 0.875rem;
+  --fs-btn: 0.875rem;
+}
+
+// ГЛОБАЛЬНЫЕ СТИЛИ
+
+body {
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: $ff-primary;
+  font-size: var(--fs-body);
+  line-height: $lh-primary;
+  color: $clr-dark;
+  font-weight: $fw-reg;
+  font-style: normal;
+
+  background-color: $clr-main;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

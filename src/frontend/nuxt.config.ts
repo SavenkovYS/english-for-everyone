@@ -2,7 +2,12 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-    css: ["@/assets/css/tailwind.css"],
+    css: [
+        '@/assets/styles/main.scss'
+    ],
+    styleResources: {
+      scss: './assets/styles/*.scss'
+    },
     build: {
         postcss: {
             postcssOptions: require("./postcss.config.js"),

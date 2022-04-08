@@ -10,8 +10,8 @@
 </template>
 
 <script lang="ts" setup>
-import TheHeader from "~/components/layout/TheHeader";
-import TheFooter from "~/components/layout/TheFooter";
+import TheHeader from "@/components/layout/TheHeader";
+import TheFooter from "@/components/layout/TheFooter";
 </script>
 
 <style lang="scss" scoped>
