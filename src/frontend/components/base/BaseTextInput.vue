@@ -47,14 +47,15 @@
 
         &__field {
             width: 100%;
+            box-sizing: border-box;
             padding: 5px 10px;
 
-            border: 2px solid #5fa406;
+            border: 2px solid $clr-secondary;
             border-radius: 5px;
         }
 
         &__field:hover {
-            border: 2px solid #9999CC;
+            border: 2px solid $clr-accent;
         }
     }
 </style>

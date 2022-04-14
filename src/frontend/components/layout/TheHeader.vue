@@ -1,11 +1,17 @@
 <template>
-  <main-navigation />
+    <header class="header">
+        <main-navigation />
+    </header>
 </template>
 
 <script lang="ts" setup>
 import MainNavigation from "~/components/layout/navigation/MainNavigation.vue";
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.header {
+    padding: 15px $padding-containers;
 
+    background-color: $clr-secondary;
+}
 </style>

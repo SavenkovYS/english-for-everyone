@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import UserLogin from "~/components/login/UserLogin";
+import UserLogin from "@/components/login/UserLogin";
 
 </script>
 

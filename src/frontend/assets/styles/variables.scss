@@ -12,12 +12,20 @@ $lh-primary              :1.7;
 $lh-secondary            :1.2;
 
 // Media Thresholds
-$width-dsk              : 1200px;
-$width-tbl              : 660px;
-$width-mbl              : 320px;
+$width-dsk              :1200px;
+$width-tbl              :660px;
+$width-mbl              :320px;
+
+// Containers width
+
+$width-container-mbl    :300px;
 
 // Main Colors
 $clr-main               :#fff;
+$clr-light              :#f5f5f5;
 $clr-secondary          :#5fa406;
 $clr-accent             :#00a4ff;
 $clr-dark               :#000;
+
+// Paddings
+$padding-containers     :20px;
